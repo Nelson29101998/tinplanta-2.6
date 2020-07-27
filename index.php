@@ -170,7 +170,7 @@ $res = mysqli_query($conexionplanta, $sql);
                         <?php
                       } else {
                         ?>
-                        <td rowspan="7" class="text-center">
+                        <td rowspan="4" class="text-center">
                         <?php
                       }
                       echo "<img src='" . $planta['Image'] . "' width='200'>"; ?>
@@ -318,9 +318,9 @@ $res = mysqli_query($conexionplanta, $sql);
       });
     } else {
       var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
-        slidesPerGroup: 3,
+        slidesPerGroup: 2,
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
