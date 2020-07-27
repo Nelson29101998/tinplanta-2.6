@@ -208,12 +208,12 @@ $res = mysqli_query($conexionplanta, $sql);
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         Tiempo de cosecha: <?php echo $planta['Duracion']; ?>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         Fecha de creación: <?php echo $planta['Fecha']; ?>
                       </td>
                     </tr>
