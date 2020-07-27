@@ -203,7 +203,7 @@ $res = mysqli_query($conexionplanta, $sql);
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td colspan="2">
                         <label class="text-justify">Detalle: <?php echo $planta['Detalle']; ?></label>
                       </td>
                     </tr>
