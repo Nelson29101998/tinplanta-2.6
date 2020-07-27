@@ -192,12 +192,30 @@ $resplant = mysqli_query($conexionplanta, $miplanta);
                         <table class="table table-bordered" style="background-color: #fff;">
                             <tbody>
                                 <tr>
-                                    <td rowspan="7" class="text-center">
-                                        <?php echo "<img src='" . $planta['Image'] . "' width='200'>"; ?>
-                                    </td>
-                                    <td>
-                                        Nombre de Planta: <?php echo $planta['Nombre']; ?>
-                                    </td>
+                                    <?php
+                                    if ($detect->isMobile()) {
+                                    ?>
+                                        <td class="text-center">
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <td rowspan="4" class="text-center">
+                                        <?php
+                                    }
+                                    echo "<img src='" . $planta['Image'] . "' width='200'>";
+                                        ?>
+                                        </td>
+                                        <?php
+                                        if ($detect->isMobile()) {
+                                        ?>
+                                </tr>
+                                <tr>
+                                <?php
+                                        }
+                                ?>
+                                <td>
+                                    Nombre de Planta: <?php echo $planta['Nombre']; ?>
+                                </td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -215,17 +233,17 @@ $resplant = mysqli_query($conexionplanta, $miplanta);
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td colspan="2">
                                         <label class="text-justify">Detalle: <?php echo $planta['Detalle']; ?></label>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td colspan="2">
                                         Tiempo de cosecha: <?php echo $planta['Duracion']; ?>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td colspan="2">
                                         Fecha: <?php echo $planta['Fecha']; ?>
                                     </td>
                                 </tr>
