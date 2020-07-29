@@ -15,7 +15,7 @@ if (isset($_GET['buscar'])) {
   $bus = $_GET['buscar'];
   $sql = "SELECT * FROM plantas WHERE Nombre Like'$bus%'";
 } else {
-  $sql = "SELECT * FROM plantas ORDER BY Fecha";
+  $sql = "SELECT * FROM plantas ORDER BY Fecha ASC";
 }
 $res = mysqli_query($conexionplanta, $sql);
 ?>
