@@ -364,6 +364,16 @@ $res = mysqli_query($conexionplanta, $sql);
       });
     }
   </script>
+  <script type="text/javascript">
+    function formula() {
+      var buscarplanta = document.forms['buscarplanta']['buscar'].value;
+
+      if(buscarplanta == "" || buscarplanta == null){
+        alert("Introduzca su buscar");
+        return false;
+      }
+    }
+  </script>
 </body>
 
 </html>
