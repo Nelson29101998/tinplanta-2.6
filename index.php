@@ -90,7 +90,7 @@ $res = mysqli_query($conexionplanta, $sql);
 
 <body style="background-color: chartreuse;">
   <div class="container-fluid text-center bg-warning py-3">
-    <img src="http://drive.google.com/uc?id=16yHHkXWlqx5tzo21075pNeJpV1Xl1MIt" class="animated fadeInDown delay-1s" alt="nomemp" id="nomemp" width="300">
+    <?php require('php/seasons.php'); ?>
   </div>
 
   <nav class="navbar navbar-expand-lg navbar-dark green sticky-top">
