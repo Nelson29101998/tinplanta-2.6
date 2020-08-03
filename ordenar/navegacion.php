@@ -2,7 +2,7 @@
 
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark green sticky-top">
-    <a class="navbar-brand" href="image/logo/logotin.png">
+    <a class="navbar-brand" href="http://drive.google.com/uc?id=1ESJ6kDwOXWsM89XMbyaMdVxcJlD9OG2f">
         <img src="http://drive.google.com/uc?id=1ESJ6kDwOXWsM89XMbyaMdVxcJlD9OG2f" alt="logo" style="width: 20px;">
     </a>
 
