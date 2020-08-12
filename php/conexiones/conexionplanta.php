@@ -1,10 +1,10 @@
 <?php
 //Heroku CleanDB
 
-$servername = "us-cdbr-east-05.cleardb.net";
-$user = "b027541037ac8a";
-$pass = "a9d1c515";
-$bd = "heroku_0c065ea8e5fab3a";
+$servername = "sq65ur5a5bj7flas.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$user = "fwrgmuou398ho96i";
+$pass = "m7ws863tr0aghxbe";
+$bd = "pf6950lfz90agkbs";
 
 
 //Xampp
@@ -12,7 +12,7 @@ $bd = "heroku_0c065ea8e5fab3a";
 $servername = "localhost";
 $user = "root";
 $pass = "";
-$bd = "bibliotecaplantas";
+$bd = "cuentatinplanta";
 */
 $conexionplanta = $conexionplanta = new mysqli($servername, $user, $pass, $bd);
 if($conexionplanta -> connect_error){
